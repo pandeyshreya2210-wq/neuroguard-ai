@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEUROGUARD AI 🎀</title>
+<style>
+:root {
+  --pink:#f6a9c9;
+  --rose:#d95f96;
+  --pale:#fff1f7;
+  --cream:#fffafd;
+  --ink:#60394d;
+  --muted:#9a7186;
+  --line:#f4d4e3;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:"Trebuchet MS",Arial,sans-serif;
+}
+header {
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  padding:17px 6%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
+  position:sticky;
+  top:0;
+  z-index:3;
+}
+.brand { font-size:20px; font-weight:900; letter-spacing:1px; }
+.brand span { color:var(--rose); }
+nav { display:flex; gap:16px; flex-wrap:wrap; }
+nav a { color:var(--muted); text-decoration:none; font-size:13px; }
+nav a:hover { color:var(--rose); }
+main { max-width:1100px; margin:auto; padding:28px 18px 60px; }
+.hero {
+  background:linear-gradient(135deg,#ffe1ef,#fff5fa 60%,#fce8f5);
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:35px 25px;
+  position:relative;
+  overflow:hidden;
+}
+.bow { color:#d95f96; font-size:30px; }
+.eyebrow { color:var(--rose); font-size:12px; letter-spacing:2px; font-weight:bold; }
+h1 { font-size:clamp(32px,6vw,58px); margin:12px 0; line-height:1.05; }
+h1 em { color:var(--rose); font-style:normal; }
+p { line-height:1.7; }
+.hero p { max-width:570px; color:#865b72; }
+.btn {
+  display:inline-block; border:0; border-radius:999px;
+  padding:12px 19px; background:var(--rose); color:white;
+  font-weight:bold; cursor:pointer; text-decoration:none;
+}
+.btn.secondary { background:white; color:var(--rose); border:1px solid var(--line); }
+.section-title { margin:32px 0 15px; font-size:23px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px; }
+.card {
+  background:#fff; border:1px solid var(--line);
+  border-radius:22px; padding:21px; box-shadow:0 7px 24px #d77ba00b;
+}
+.card h3 { margin:9px 0; }
+.emoji { font-size:28px; }
+.muted { color:var(--muted); font-size:13px; }
+.tag {
+  display:inline-block; padding:6px 10px; border-radius:99px;
+  background:var(--pale); color:var(--rose); font-size:11px; font-weight:bold;
+}
+.lab { margin-top:15px; }
+label { display:block; font-weight:bold; font-size:13px; margin:16px 0 7px; }
+input[type=range] { width:100%; accent-color:var(--rose); }
+select {
+  width:100%; padding:11px; border:1px solid var(--line);
+  border-radius:12px; background:white; color:var(--ink);
+}
+.result {
+  background:#fff4f9; border:1px dashed #e8a2c3;
+  border-radius:18px; padding:17px; margin-top:16px;
+}
+.result h3 { color:var(--rose); }
+.notice {
+  border-left:4px solid var(--rose); padding:13px 15px;
+  background:#fff4f9; border-radius:0 12px 12px 0;
+  font-size:13px; line-height:1.65;
+}
+footer { text-align:center; color:var(--muted); padding:25px; font-size:12px; }
+button:focus,a:focus,input:focus,select:focus { outline:2px solid #d95f96; outline-offset:3px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">🎀 NEUROGUARD <span>AI</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#lab">AI Lab</a>
+    <a href="#learn">Brain Academy</a>
+    <a href="#safety">Safety</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="bow">୨୧</div>
+  <div class="eyebrow">BRAIN SCIENCE · AI EDUCATION · HUMAN CARE</div>
+  <h1>A little pink.<br>A lot of <em>brain science.</em></h1>
+  <p>
+    Welcome to NEUROGUARD AI, a student-built educational project
+    exploring how artificial intelligence may support brain-health
+    research while doctors remain at the centre of patient care.
+  </p>
+  <a class="btn" href="#lab">Explore the AI Lab ♡</a>
+  <a class="btn secondary" href="#learn">Learn about strokes</a>
+</section>
+
+<h2 class="section-title">Your little science corner ♡</h2>
+<section class="grid">
+  <article class="card">
+    <div class="emoji">🧠</div><span class="tag">LEARN</span>
+    <h3>Brain Academy</h3>
+    <p class="muted">Explore stroke basics, brain imaging, and why fast medical assessment matters.</p>
+    <a href="#learn">Explore →</a>
+  </article>
+  <article class="card">
+    <div class="emoji">🧪</div><span class="tag">DEMO</span>
+    <h3>AI Pattern Lab</h3>
+    <p class="muted">Try a small educational classifier using preloaded example data.</p>
+    <a href="#lab">Try the demo →</a>
+  </article>
+  <article class="card">
+    <div class="emoji">🩺</div><span class="tag">PEOPLE FIRST</span>
+    <h3>Human + AI</h3>
+    <p class="muted">Learn why AI can assist research but cannot replace a qualified clinician.</p>
+    <a href="#safety">Our safety promise →</a>
+  </article>
+</section>
+
+<section id="lab">
+  <h2 class="section-title">🎀 AI Pattern Lab</h2>
+  <p class="muted">A tiny interactive demonstration of how a classifier uses example patterns.</p>
+  <div class="card lab">
+    <span class="tag">ILLUSTRATIVE DATASET · NOT MEDICAL DATA</span>
+    <p>
+      The example dataset below contains invented numerical patterns.
+      Change the values and see which example group is nearest.
+    </p>
+
+    <label for="f1">Pattern feature A: <span id="v1">30</span></label>
+    <input id="f1" type="range" min="0" max="100" value="30">
+
+    <label for="f2">Pattern feature B: <span id="v2">70</span></label>
+    <input id="f2" type="range" min="0" max="100" value="70">
+
+    <button class="btn" id="classify">Classify example pattern ♡</button>
+    <div class="result" id="result" aria-live="polite">
+      <strong>Ready when you are!</strong>
+      <p class="muted">This demo teaches pattern classification. It does not detect strokes.</p>
+    </div>
+  </div>
+</section>
+
+<section id="learn">
+  <h2 class="section-title">🌸 Brain Academy</h2>
+  <div class="grid">
+    <article class="card">
+      <div class="emoji">🩷</div>
+      <h3>What is a stroke?</h3>
+      <p class="muted">A stroke occurs when blood flow to part of the brain is interrupted or when bleeding occurs in or around the brain.</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🖼️</div>
+      <h3>Why brain imaging?</h3>
+      <p class="muted">CT and MRI scans provide different information. Clinicians choose and interpret imaging according to the situation.</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🤖</div>
+      <h3>What can AI do?</h3>
+      <p class="muted">A properly tested model may help identify patterns, but performance can vary and errors are possible.</p>
+    </article>
+  </div>
+</section>
+
+<section id="safety">
+  <h2 class="section-title">🩺 Our safety promise</h2>
+  <div class="notice">
+    <strong>Educational prototype only.</strong>
+    This website is not a medical device and cannot diagnose, rule out,
+    or predict a stroke. Its example classifier uses invented data, not
+    brain scans. Never use its output to make healthcare decisions.
+    Suspected stroke symptoms require emergency medical attention.
+    Clinical decisions belong to qualified healthcare professionals.
+  </div>
+</section>
+</main>
+
+<footer>
+  Made with ♡ for science · NEUROGUARD AI · Student exhibition prototype 🎀
+</footer>
+
+<script>
+/*
+  Small built-in illustrative dataset.
+  Each row is [feature A, feature B, example class].
+  These are invented values, NOT real scan data or patient records.
+*/
+const examples = [
+  [20,80,"Rose group"], [25,75,"Rose group"],
+  [15,85,"Rose group"], [30,70,"Rose group"],
+  [75,25,"Lilac group"], [80,20,"Lilac group"],
+  [70,30,"Lilac group"], [85,15,"Lilac group"],
+  [48,52,"Peach group"], [52,48,"Peach group"],
+  [45,55,"Peach group"], [55,45,"Peach group"]
+];
+
+const a = document.getElementById("f1");
+const b = document.getElementById("f2");
+const result = document.getElementById("result");
+
+function updateLabels() {
+  document.getElementById("v1").textContent = a.value;
+  document.getElementById("v2").textContent = b.value;
+}
+a.addEventListener("input", updateLabels);
+b.addEventListener("input", updateLabels);
+
+document.getElementById("classify").addEventListener("click", () => {
+  const point = [Number(a.value), Number(b.value)];
+
+  // Find the three nearest example patterns.
+  const nearest = examples.map(row => ({
+    label: row[2],
+    distance: Math.hypot(point[0]-row[0], point[1]-row[1])
+  })).sort((x,y) => x.distance-y.distance).slice(0,3);
+
+  const votes = {};
+  nearest.forEach(item => {
+    votes[item.label] = (votes[item.label] || 0) + 1;
+  });
+
+  const winner = Object.entries(votes).sort((x,y) => y[1]-x[1])[0][0];
+
+  result.innerHTML = `
+    <span class="tag">DEMO RESULT</span>
+    <h3>${winner}</h3>
+    <p>The three nearest example patterns mostly belong to this group.</p>
+    <p class="muted">This is a simple nearest-neighbour demonstration using invented numerical data.
+    It is not trained on brain scans and has no medical meaning.</p>
+  `;
+});
+updateLabels();
+</script>
+</body>
+</html>
